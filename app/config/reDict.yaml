@@ -1,0 +1,17 @@
+Amazon_AWS_Access_Key_ID: "(([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,})"
+Amazon_AWS_S3_Bucket:
+- "//s3-[a-z0-9-]+\\.amazonaws\\.com/[a-z0-9._-]+"
+- "//s3\\.amazonaws\\.com/[a-z0-9._-]+"
+- "[a-z0-9.-]+\\.s3-[a-z0-9-]\\.amazonaws\\.com"
+- "([a-z0-9.-]+\\.s3-website[.-](eu|ap|us|ca|sa|cn))"
+- "[a-z0-9.-]+\\.s3\\.amazonaws\\.com"
+- "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+Authorization_Basic: "basic\\s[a-zA-Z0-9_\\-:\\.=]+"
+"Authorization_Bearer": "bearer\\s[a-zA-Z0-9_\\-:\\.=]+"
+"IP_Address": '(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))'
+"LinkFinder":
+- "<link.*?href=\"(.*?)\""
+- "<script.*?src=\"(.*?)\""
+- "(<form.*?action=\".*?)\">"
+- 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+"Email": '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
